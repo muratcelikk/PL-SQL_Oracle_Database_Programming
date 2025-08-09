@@ -1,0 +1,171 @@
+satır no-->settings->number(arama kutucuğuna yaz)->Line Gutter->show lines number işaretle.
+DİL     -->database->NLS->data language(türkçe) (Language:English geri kalan hepsi Turkısh)
+
+:: PL/SQL nedir? ::
+Sql programlama dilinin prosedür özellikleri ile donatılmış halidir. PL/SQL (Procedural Language extension to Structured Query Language) SQL, Java, PL/SQL programlama dillerini kullanır.
+
+:: PL/SQL BLOCK TÜRLERİ NELERDİR?:: 
+1.2-Unnamed Block/Nested Subprograms (isimsiz, db de saklanmaz, programlama dillerinde çalıştırımaz, çalışma esnasınsa derlenir)
+2.2-Named   Block/Stored Subprograms (ismi var, db de saklanır, plsql bloklar ve programlma dillerinde çalıştırılır, derlenmiş hali çağrılıp çalıştırılır.)
+	(Procedure, Function)
+
+:: CURSORS nedir? ::
+Oracle ın DML komutlarını yürüttüğü Memory alanıdır. 2 ye ayrılır;
+1-Implicit Cursorlar (DML komutları çalıştığında tetiklenen imleçlerdir.)
+2-Explicit Cursorlar (Developer-defined -> uygulama geşliştiricisi tarafından tanımlanan imleçlerdir.)
+
+:: PROCEDURE nedir? ::
+Belirli bir görevi yerine getirmek için tasarlanmış programlama bloğudur.
+
+2 ye ayrılır;
+1.2-Nested procedure: unnamed bloklar, veritabanında saklanmaz.
+2.2-Stored procedure: Standalone yada package içinde yazılabilir. Veritabanında saklanır. Procedure ve functionlar yanlız başına da, paket şeklindede kullanılabilir.
+
+*** NESTED PROCEDURES SYNTAX***
+
+DECLARE
+	
+	-- Declare and define procedure
+	PROCEDURE <Proc_name> (--subprogram heading begins 
+		<parameters>
+	) --Subprogram heading ends
+	IS
+		<variables>
+	BEGIN -- Executable part begins
+		..
+		EXCEPTION -- Exception-handling begins
+	END <Proc_name>;
+
+
+BEGIN  --Main Block
+	..
+	<Proc_name>(Parameters Values); --Call Pro
+END;
+
+*** *** *** 
+
+
+*** STANDALONE PROCEDURES SYNTAX*** 
+
+DECLARE
+	
+	-- Declare and define procedure
+	CREATE [OR REPLACE] PROCEDURE <Proc_name> (--subprogram heading begins 
+		<parameters>
+	) --Subprogram heading ends
+	IS
+		<variables>
+	BEGIN -- Executable part begins
+		..
+		EXCEPTION -- Exception-handling begins
+	END <Proc_name>;
+
+
+BEGIN  --Main Block
+	..
+	<Proc_name>(Parameters Values); --Call Pro
+END;
+
+*** *** *** 
+NOT: nested ile standalone procedure arasındaki tek fark "" CREATE [OR REPLACE] ""
+
+
+
+:: FUNCTION nedir? ::
+Değişken sayıları girdi olarak kabul edip bunlardan bir çıktı sayısı oluşmasını sağlayan kurallardır.
+
+*** FUNCTIONS SYNTAX***
+
+DECLARE
+	wsonuc         <data_type>;
+	-- Declare and define procedure
+	FUNCTIONS <func_name> (--subprogram heading begins 
+		<parameters>
+	) RETURN <data_type>
+	IS
+		<variables>
+	-- Declarative part begins
+	BEGIN -- Executable part begins
+		..
+		RETURN (data);
+		EXCEPTION -- Exception-handling begins
+	END <Proc_name>;
+
+
+BEGIN  --Main Block
+	...
+	wsonuc:= <func_name>(Parameters Values); --Call func
+END;
+
+*** *** *** 
+
+
+
+
+:: PACKAGE nedir? ::
+Pl/sql nesnelerinin, bir grup altında toplanmış halidir. Pl/sql nesneleri; Developer-Defined Data Types, variables, constants, cursors, functions, procedures.
+
+*** PACKAGE SYNTAX***
+
+	-Package Specification
+
+CREATE OR REPLACE PACKAGE package_name IS
+[declerations of variables and types]
+[specification of cursor]
+[specification of function]
+[specification of procedure]
+END[package_name];
+
+	-Package Body
+
+CREATE OR REPLACE PACKAGE package_name IS
+[declerations of variables and types]
+[specification of cursor]
+[specification of function]
+	BEGIN
+		...
+	END;
+[specification of procedure]
+	BEGIN
+		...
+	END;
+END[package_name];
+
+*** *** *** 
+
+
+
+:: TRİGGER nedir? :: 
+Herhangi bu durum oluştuğunda otomatik olarak tetiklenen pl/sql programlarıdır. 2 ye ayrılır;
+
+1-DML    Triggers(İnsert, update, delete transactionları)-->Before ve After
+2-System Triggers(Table create, drop, alter)-->Shema triggers ve Database triggers
+
+*** TRİGGER SYNTAX***
+
+
+
+
+:::: ÖNEMLİ NOT; ::::
+
+:: FUNCTIONS ve procedure arasındaki fark nedir?
+"RETURN" ifadesidir. Fonksiyonlar bir değer döndürür. Main blockta değişkene atanarak çağrılır.
+
+:: FUNCTIONSları ve procedureleri birbirlerinin yerine kulanabilirmiyiz?
+Kullanabiliriz. Procedurelere IN||OUT||INOUT parametreleri yazarak değer döndürürüz.
+
+:: NOT: named block içinde unnamed block çağrılamaz. Ama unnamed block içine named bloklar çağrılır.
+
+:: Büyük küçük harf duyarlılığı; (hem duyarlı hem değildir. Çünkü kodun veya sorgunun hangi bölümüne baktığınıza göre değişir.)
+-Duyarlı değil
+SELECT, FROM, WHERE, UPDATE, INSERT, CREATE TABLE, BEGIN, END, DECLARE, LOOP, IF gibi tüm SQL ve PL/SQL komutları ve anahtar kelimeleri büyük/küçük harf duyarlı değildir.
+
+-Duyarlı 
+Çift tırnak içinde tanımlanmış nesne adları, tek tırnak içindeki karakter dizileri ve kullanıcı şifreleri büyük/küçük harf duyarlıdır.
+
+
+nested: db de saklanmaz. '' tek tırnak yoğun kullanılır. 
+RETURNING: hem update hemde select in birlikte kullanılmasını sağlar. (güncelleyip listeler) 
+değişken başına 'w' (variable) 
+cursor   başına 'c' 
+concat ' || '
