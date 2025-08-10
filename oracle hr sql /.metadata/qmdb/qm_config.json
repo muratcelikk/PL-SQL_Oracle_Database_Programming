@@ -1,0 +1,12 @@
+{
+  "driver": "h2_embedded_v2",
+  "url": "jdbc:h2:${workspace}/.metadata/qmdb/qmdb_v2",
+  "databaseId": "qmdb_v2",
+  "pool": {
+    "minIdleConnections": 1,
+    "maxIdleConnections": 1,
+    "maxConnections": 10,
+    "validationQuery": "SELECT 1"
+  },
+  "backupEnabled": false
+}

@@ -1,0 +1,231 @@
+2025-08-10 03:58:53.810 - DBeaver 25.0.5.202505181758 is starting
+2025-08-10 03:58:53.811 - OS: Mac OS X 15.6 (aarch64)
+2025-08-10 03:58:53.811 - Java version: 21.0.5 by Eclipse Adoptium (64bit)
+2025-08-10 03:58:53.811 - Install path: '/Applications/DBeaver.app/Contents/Eclipse'
+2025-08-10 03:58:53.812 - Instance path: 'file:/Users/muratcelik/Desktop/oracle hr sql /'
+2025-08-10 03:58:53.813 - Memory available 64Mb/1024Mb
+2025-08-10 03:58:53.820 - Create display
+2025-08-10 03:58:53.949 - Initialize desktop platform...
+2025-08-10 03:58:53.950 - Language for locale 'tr_TR' not found. Use default.
+2025-08-10 03:58:54.030 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.11.100.v20241022-0806]
+> Start Core Resource Management [org.eclipse.core.resources 3.22.100.v20250206-1238]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.155.202505181758]
+> Start Team Support Core [org.eclipse.team.core 3.10.600.v20250120-0641]
+2025-08-10 03:58:54.161 - Recovering project 'General' metadata /Users/muratcelik/Desktop/oracle hr sql /General/.project
+2025-08-10 03:58:54.161 - Error opening project
+java.io.FileNotFoundException: /Users/muratcelik/Desktop/oracle hr sql /General/.project (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileWriter.<init>(Unknown Source)
+	at org.jkiss.utils.IOUtils.writeFileFromString(IOUtils.java:200)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.recoverProjectDescription(DesktopProjectImpl.java:350)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.ensureOpen(DesktopProjectImpl.java:144)
+	at org.jkiss.dbeaver.model.rcp.EclipseWorkspaceImpl.initializeProjects(EclipseWorkspaceImpl.java:108)
+	at org.jkiss.dbeaver.core.DesktopPlatform.initialize(DesktopPlatform.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.utils.RuntimeUtils.injectComponentReferences(RuntimeUtils.java:719)
+	at org.jkiss.dbeaver.utils.RuntimeUtils.getBundleService(RuntimeUtils.java:691)
+	at org.jkiss.dbeaver.runtime.DBWorkbench.getApplicationWorkbench(DBWorkbench.java:45)
+	at org.jkiss.dbeaver.runtime.DBWorkbench.getPlatform(DBWorkbench.java:51)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:283)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:797)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:635)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1578)
+2025-08-10 03:58:54.171 - Initialize base platform...
+2025-08-10 03:58:54.184 - send collected statistics
+2025-08-10 03:58:54.192 - Platform initialized (243ms)
+2025-08-10 03:58:54.213 - Starting instance server at http://localhost:52363
+2025-08-10 03:58:54.218 - Run workbench
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.700.v20250123-0706]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.5.100.v20250131-1039]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.500.v20250123-0754]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.700.v20241015-1729]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.500.v20241015-1729]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.500.v20241015-1729]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.38.0.v20240721-0634]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.5.600.v20241107-2150]
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.700.v20250212-1224]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.300.v20240413-1529]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.500.v20241219-0802]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.500.v20250213-1508]
+> Start Default Text Editor [org.eclipse.ui.editors 3.19.100.v20250205-1448]
+> Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.19.100.v20250206-1224]
+2025-08-10 03:58:55.145 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.145.202505181758]
+2025-08-10 03:58:55.229 - Total database drivers: 123 (123)
+> Start Help System Core [org.eclipse.help 3.10.400.v20240415-0528]
+2025-08-10 03:58:55.262 - Create actions
+2025-08-10 03:58:55.268 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2025-08-10 03:58:55.268 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2025-08-10 03:58:55.268 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2025-08-10 03:58:55.268 - Create workbench actions
+2025-08-10 03:58:55.489 - Initialize workbench window
+2025-08-10 03:58:55.494 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.155.202505181758]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.19.0.202502242203]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.21.0.202502242203]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.115.202505181758]
+> Start Equinox Java Authentication and Authorization Service (JAAS) [org.eclipse.equinox.security 1.4.500.v20250129-1350]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.400.v20240413-1529]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.600.v20250124-0919]
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.155.202505181758]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ui.config.sample 1.0.192.202505181758]
+2025-08-10 03:58:58.331 - Recovering project 'General' metadata /Users/muratcelik/Desktop/oracle hr sql /General/.project
+2025-08-10 03:58:58.331 - Error opening project
+java.io.FileNotFoundException: /Users/muratcelik/Desktop/oracle hr sql /General/.project (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileWriter.<init>(Unknown Source)
+	at org.jkiss.utils.IOUtils.writeFileFromString(IOUtils.java:200)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.recoverProjectDescription(DesktopProjectImpl.java:350)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.ensureOpen(DesktopProjectImpl.java:144)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.readChildNodes(DBNProject.java:151)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getChildren(DBNProject.java:287)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getDatabases(DBNProject.java:65)
+	at org.jkiss.dbeaver.ui.navigator.database.DatabaseNavigatorView.getRootNode(DatabaseNavigatorView.java:91)
+	at org.jkiss.dbeaver.ui.navigator.database.NavigatorViewBase.lambda$0(NavigatorViewBase.java:111)
+	at org.jkiss.dbeaver.ui.UIExecutionQueue.executeInUI(UIExecutionQueue.java:88)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:311)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:797)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:635)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1578)
+2025-08-10 03:58:58.334 - Recovering project 'General' metadata /Users/muratcelik/Desktop/oracle hr sql /General/.project
+2025-08-10 03:58:58.335 - Error opening project
+java.io.FileNotFoundException: /Users/muratcelik/Desktop/oracle hr sql /General/.project (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileWriter.<init>(Unknown Source)
+	at org.jkiss.utils.IOUtils.writeFileFromString(IOUtils.java:200)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.recoverProjectDescription(DesktopProjectImpl.java:350)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.ensureOpen(DesktopProjectImpl.java:144)
+	at org.jkiss.dbeaver.model.impl.app.BaseProjectImpl.lambda$0(BaseProjectImpl.java:191)
+	at org.jkiss.dbeaver.model.impl.app.BaseProjectImpl.lambda$1(BaseProjectImpl.java:203)
+	at org.jkiss.dbeaver.utils.RuntimeUtils$MonitoringTask.run(RuntimeUtils.java:756)
+	at org.jkiss.dbeaver.utils.RuntimeUtils$1.run(RuntimeUtils.java:264)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-10 03:58:58.347 - Recovering project 'General' metadata /Users/muratcelik/Desktop/oracle hr sql /General/.project
+2025-08-10 03:58:58.347 - Error opening project
+java.io.FileNotFoundException: /Users/muratcelik/Desktop/oracle hr sql /General/.project (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileWriter.<init>(Unknown Source)
+	at org.jkiss.utils.IOUtils.writeFileFromString(IOUtils.java:200)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.recoverProjectDescription(DesktopProjectImpl.java:350)
+	at org.jkiss.dbeaver.model.rcp.DesktopProjectImpl.ensureOpen(DesktopProjectImpl.java:144)
+	at org.jkiss.dbeaver.model.navigator.DBNProjectDesktop.addProjectNodes(DBNProjectDesktop.java:103)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.readChildNodes(DBNProject.java:166)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getChildren(DBNProject.java:287)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getDatabases(DBNProject.java:65)
+	at org.jkiss.dbeaver.ui.navigator.database.DatabaseNavigatorView.getRootNode(DatabaseNavigatorView.java:91)
+	at org.jkiss.dbeaver.ui.navigator.database.NavigatorViewBase.lambda$0(NavigatorViewBase.java:111)
+	at org.jkiss.dbeaver.ui.UIExecutionQueue.executeInUI(UIExecutionQueue.java:88)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:311)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:797)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:635)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1578)
+2025-08-10 03:58:58.351 - Event loop exception
+java.lang.IllegalStateException: Can't read project contents
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getDatabases(DBNProject.java:71)
+	at org.jkiss.dbeaver.ui.navigator.database.DatabaseNavigatorView.getRootNode(DatabaseNavigatorView.java:91)
+	at org.jkiss.dbeaver.ui.navigator.database.NavigatorViewBase.lambda$0(NavigatorViewBase.java:111)
+	at org.jkiss.dbeaver.ui.UIExecutionQueue.executeInUI(UIExecutionQueue.java:88)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:311)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:797)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:635)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1578)
+Caused by: org.jkiss.dbeaver.DBException: Can't read container's members
+	at org.jkiss.dbeaver.model.navigator.DBNResource.readChildResourceNodes(DBNResource.java:194)
+	at org.jkiss.dbeaver.model.navigator.DBNProjectDesktop.addProjectNodes(DBNProjectDesktop.java:104)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.readChildNodes(DBNProject.java:166)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getChildren(DBNProject.java:287)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.getDatabases(DBNProject.java:65)
+	... 26 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Project 'General' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:186)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:237)
+	at org.jkiss.dbeaver.model.navigator.DBNResource.readChildResourceNodes(DBNResource.java:184)
+	... 30 more
+Caused by: java.lang.Exception: Project 'General' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 34 more
+2025-08-10 03:59:11.856 - Dispose navigator model
+2025-08-10 03:59:11.901 - DBeaver is stopping
+2025-08-10 03:59:11.902 - Stop instance server
+2025-08-10 03:59:12.914 - DBeaver shutdown completed

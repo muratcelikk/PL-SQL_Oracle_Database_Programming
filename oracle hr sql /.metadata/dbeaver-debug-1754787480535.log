@@ -1,0 +1,121 @@
+2025-08-10 03:45:17.800 - DBeaver 25.0.5.202505181758 is starting
+2025-08-10 03:45:17.801 - OS: Mac OS X 15.6 (aarch64)
+2025-08-10 03:45:17.801 - Java version: 21.0.5 by Eclipse Adoptium (64bit)
+2025-08-10 03:45:17.801 - Install path: '/Applications/DBeaver.app/Contents/Eclipse'
+2025-08-10 03:45:17.801 - Instance path: 'file:/Users/muratcelik/Desktop/oracle hr sql /'
+2025-08-10 03:45:17.802 - Memory available 64Mb/1024Mb
+2025-08-10 03:45:17.810 - Create display
+2025-08-10 03:45:17.947 - Initialize desktop platform...
+2025-08-10 03:45:17.948 - Language for locale 'tr_TR' not found. Use default.
+2025-08-10 03:45:18.038 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.11.100.v20241022-0806]
+> Start Core Resource Management [org.eclipse.core.resources 3.22.100.v20250206-1238]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.155.202505181758]
+> Start Team Support Core [org.eclipse.team.core 3.10.600.v20250120-0641]
+2025-08-10 03:45:18.182 - Initialize base platform...
+2025-08-10 03:45:18.198 - send collected statistics
+2025-08-10 03:45:18.208 - Platform initialized (261ms)
+2025-08-10 03:45:18.230 - Starting instance server at http://localhost:52281
+2025-08-10 03:45:18.235 - Run workbench
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.700.v20250123-0706]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.5.100.v20250131-1039]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.500.v20250123-0754]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.700.v20241015-1729]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.500.v20241015-1729]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.500.v20241015-1729]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.38.0.v20240721-0634]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.5.600.v20241107-2150]
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.700.v20250212-1224]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.300.v20240413-1529]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.500.v20241219-0802]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.500.v20250213-1508]
+> Start Default Text Editor [org.eclipse.ui.editors 3.19.100.v20250205-1448]
+> Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.19.100.v20250206-1224]
+2025-08-10 03:45:19.306 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.145.202505181758]
+2025-08-10 03:45:19.399 - Total database drivers: 123 (123)
+> Start Help System Core [org.eclipse.help 3.10.400.v20240415-0528]
+2025-08-10 03:45:19.436 - Create actions
+2025-08-10 03:45:19.442 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2025-08-10 03:45:19.442 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2025-08-10 03:45:19.442 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2025-08-10 03:45:19.442 - Create workbench actions
+2025-08-10 03:45:19.655 - Initialize workbench window
+2025-08-10 03:45:19.657 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.155.202505181758]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.19.0.202502242203]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.21.0.202502242203]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.115.202505181758]
+> Start Equinox Java Authentication and Authorization Service (JAAS) [org.eclipse.equinox.security 1.4.500.v20250129-1350]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.400.v20240413-1529]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.600.v20250124-0919]
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.155.202505181758]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ui.config.sample 1.0.192.202505181758]
+2025-08-10 03:45:20.603 - Event loop exception
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchPage.getActivePart()" because "activePage" is null
+	at org.jkiss.dbeaver.ui.app.standalone.ApplicationWorkbenchWindowAdvisor.lambda$3(ApplicationWorkbenchWindowAdvisor.java:389)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.jkiss.dbeaver.ui.app.standalone.tipoftheday.ShowTipOfTheDayHandler.showTipOfTheDayDialog(ShowTipOfTheDayHandler.java:67)
+	at org.jkiss.dbeaver.ui.app.standalone.tipoftheday.ShowTipOfTheDayHandler.showTipOfTheDay(ShowTipOfTheDayHandler.java:52)
+	at org.jkiss.dbeaver.ui.app.standalone.tipoftheday.TipOfTheDayInitializer.initializeWorkbenchWindow(TipOfTheDayInitializer.java:35)
+	at org.jkiss.dbeaver.ui.app.standalone.ApplicationWorkbenchWindowAdvisor.lambda$2(ApplicationWorkbenchWindowAdvisor.java:360)
+	at org.jkiss.dbeaver.ui.UIExecutionQueue.executeInUI(UIExecutionQueue.java:88)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:561)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.run(IDEWorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:389)
+	at org.jkiss.dbeaver.ui.app.standalone.ApplicationWorkbenchAdvisor.postShutdown(ApplicationWorkbenchAdvisor.java:381)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3050)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1183)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1456)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1427)
+	at org.eclipse.ui.internal.Workbench.lambda$16(Workbench.java:2852)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4660)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4649)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5860)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5578)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5979)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.nextEventMatchingMask(NSApplication.java:92)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3997)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:311)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:797)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:635)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1578)
+2025-08-10 03:45:22.558 - Open [https://dbeaver.io/product/version.xml]
+2025-08-10 03:45:22.563 - Dispose navigator model
+2025-08-10 03:45:22.622 - DBeaver is stopping
+2025-08-10 03:45:22.623 - Stop instance server
+2025-08-10 03:45:23.648 - Instance server has been stopped
+2025-08-10 03:45:23.653 - DBeaver shutdown completed
