@@ -9,7 +9,7 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('Merhaba Dünya!!!');
 END;
 
--- Kullanım: yukarıdaki yeşil sql kutucuğundan HR bölümü seçilerek yeni bir sayfa açılır ve aşağıdaki procedure yazılır ve çalıştırılır. Procedure içerisinde  MERHABADUNYA şeklinde kayıt edilir. İstenildiğinde çağrılır.
+-- Kullanım: merhabaDunya procseduru yazılır ve calıstırılır. Prosedürler icerisinde  MERHABADUNYA seklinde kayıt edilir. 
 
 SET SERVEROUTPUT ON;
 
