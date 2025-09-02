@@ -10,6 +10,7 @@ Sql programlama dilinin prosedür özellikleri ile donatılmış halidir. PL/SQL
 	(Procedure, Function)
 
 :: CURSORS nedir? ::
+Bir sql sorgusunun sonucunu satır satır işlemek için kullanılan yapıdır.
 Oracle ın DML komutlarını yürüttüğü Memory alanıdır. 2 ye ayrılır;
 1-Implicit Cursorlar (DML komutları çalıştığında tetiklenen imleçlerdir.)
 2-Explicit Cursorlar (Developer-defined -> uygulama geşliştiricisi tarafından tanımlanan imleçlerdir.)
@@ -149,7 +150,7 @@ Herhangi bu durum oluştuğunda otomatik olarak tetiklenen pl/sql programlarıd�
 :::: ÖNEMLİ NOT; ::::
 
 :: FUNCTIONS ve procedure arasındaki fark nedir?
-"RETURN" ifadesidir. Fonksiyonlar bir değer döndürür. Main blockta değişkene atanarak çağrılır.
+"RETURN" ifadesidir. Fonksiyonlar dışarıya bir değer döndürür. Main blockta değişkene atanarak çağrılır.
 
 :: FUNCTIONSları ve procedureleri birbirlerinin yerine kulanabilirmiyiz?
 Kullanabiliriz. Procedurelere IN||OUT||INOUT parametreleri yazarak değer döndürürüz.
@@ -167,5 +168,5 @@ SELECT, FROM, WHERE, UPDATE, INSERT, CREATE TABLE, BEGIN, END, DECLARE, LOOP, IF
 nested: db de saklanmaz. '' tek tırnak yoğun kullanılır. 
 RETURNING: hem update hemde select in birlikte kullanılmasını sağlar. (güncelleyip listeler) 
 değişken başına 'w' (variable) 
-cursor   başına 'c' 
+cursor(imleç)  başına 'c' 
 concat ' || '
